@@ -21,7 +21,7 @@ client.on('webhookUpdate', async (channel ) => {
     .setFooter("Attention, un webhook vient d'être crée.")
     newChannel.setPosition(position);
     newChannel.setRateLimitPerUser(rateLimitPerUser)
-    let logChannel = client.channels.cache.get("871084103670329414")
+    let logChannel = client.channels.cache.get("871084103670329414") // le channel de logs
 if(!logChannel) return;
 logChannel.send(loggingEmbed)
 })
